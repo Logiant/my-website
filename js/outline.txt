@@ -1,0 +1,5 @@
+a js file that replaces {text 1} with the following:
+ - engineer, researcher, scientist, postdoc
+
+ replaces {text 2} with the following:
+  - cyber-physical, emergent, bio-inspired, large-scale, swarm
