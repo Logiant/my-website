@@ -11,7 +11,11 @@
     
     <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -24,11 +28,13 @@
             </p>
         </a>
         <ul>
-            <li class="nav-item"><a href="#"><b>ABOUT</b></a></li>
+            <li class="nav-item active-nav"><a href="#"><b>ABOUT</b></a></li>
             <li>:</li>
-            <li class="nav-item"><a href="#"><B>CV</B></a></li>
+            <li class="nav-item"><a href="CV.html"><B>CV</B></a></li>
             <li>:</li>
-            <li class="nav-item"><a href="#"><B>RESERACH</B></a></li>
+            <li class="nav-item"><a href="https://sites.google.com/view/ud-ids-lab/home" target="_blank"><B>RESEARCH</B></a></li>
+            <li>:</li>
+            <li class="nav-item"><a href="https://www.wyrcethrang.com/" target="_blank"><B>GAMEDEV</B></a></li>
         </ul>
     </nav>
 
@@ -38,49 +44,49 @@
         </div>
         <div class="content">
             <div class="title">
-                An interdisciplenary researcher working with swarm systems @ Boston University.
+                Hi! I am an interdisciplinary <span id="role">researcher</span><br>working with <span id="topic">swarm</span> systems @ Boston University.
             </div>
             <p>
                 I have a passion for understanding how systems work, especially those containing many interacting and interdependent parts.
                 Through my research, I rigorously interrogate complex systems using tools from control theory, optimization, and nonlinear systems.
-                These emergent behaviors allow swarm systems to accomplish tasks that are impossible for any single individual.
+                Emergent behavior empowers systems to accomplish tasks that are impossible for any single individual.
                 My research emphasizes the <b>collective motion</b> of swarms, such as <b>flocking</b>, <b>formation control</b>, <b>task assignment</b>, and <b>predator avoidance</b>.
             </p>
             <br>
-            <p>
-                constraint-driven control
-                convergence to a constrained equilibrium
-                useful abstractions to different levels of interest
-            </p>
             <p> 
-                I am interested in designing decentralized agent behaviors for complex systems such that we can extract useful performance guarantees on the emergent system-level dynamics.
-                I work at the interface of control theory, co
-
-                
-                I take a full-stack approach to reseearch; starting with theoretical guarantees, validating through simulation, following through to hardware implementation.
-                Considering the full spectrum of solutions leads to novel insights that any individual approach may not capture.
                 My research is at the interface of control theory, complex systems, and optimization.
-                I am interested in designing decentralized agent behaviors such that we can extract performance guarantees on the emergent system-level dynamics.
-                This empowers us to make useful abstractions of these complex systems, rigorously examine their behavior, and analyze their dynamics at multiple scales.
+                I take a full-stack approach to research; starting with <b>theoretical guarantees</b>, validating through <b>simulation</b>, and following through to <b>hardware implementation</b>.
+                Considering this full spectrum of solutions leads to novel insights that any individual approach may not capture.
                 I have found applications in cyber-physical (e.g., robotic and transportation) as well as virtual (e.g., digital twins and video games) for this research.
                 The former is critical to advancing the frontier of multi-robot and robotic swarm systems; the latter advances our understanding of distributed algorithms, multi-level abstractions, and human-centric design.
             </p>
+            <br>
+            <p>
+                I have developed techniques for <b>constraint-driven control</b>, wherein agent behaviors and interactions are embedded as constraints in an optimization problem.
+                By carefully designing the objectives and constraints of each agent, it is possible to extract guarantees on the global system-level behavior.
+                This empowers designers to make useful abstractions of these complex systems, rigorously analyze their performance, and understand their behavior at multiple scales.
+                Pursuing these techniques has led to useful contributions in constrained optimal control, path planning, flocking, navigation, and smart transportation networks.
+            </p>
+
 
         </div>
     </div>
     <div class="links">
-        <a href="#"><img src="res/logan.jpg"></a>
-        <a href="#"><img src="res/logan.jpg"></a>
-        <a href="#"><img src="res/logan.jpg"></a>
-        <a href="#"><img src="res/logan.jpg"></a>
+        <a href="https://www.linkedin.com/in/loganebeaver/" target="_blank"><img src="res/ln.png"></a>
+        <a href="https://github.com/Logiant" target="_blank"><img src="res/octocat.png"></a>
+        <a href="mailto:lebeaver@bu.edu" target="_blank"><img src="res/gmail.png"></a>
+        <a href="https://twitter.com/le_beaver" target="_blank"><img src="res/twitter.png"></a>
     </div>
 
+    <br>
+
     <footer>
-        (c) Logan E. Beaver 2023<br>contact
+        &copy; Logan E. Beaver 2023<br>
     </footer>
 </body>
 
 <script src="js/pixi.min.js"></script>
 <script src="js/boids.js"></script>
+<script src="js/updateText.js"></script>
 
 </html>

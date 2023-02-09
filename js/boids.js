@@ -32,10 +32,10 @@ for (var i = 0; i < numBoids; i++) {
     boids[i] = new PIXI.Graphics();
     boids[i].beginFill(color, 1);
     boids[i].lineStyle(1, 0x000000, 1);
-    boids[i].moveTo(-5, -10);
-    boids[i].lineTo(-5,  10);
+    boids[i].moveTo(-5, -7);
+    boids[i].lineTo(-5,  7);
     boids[i].lineTo(15,   0);
-    boids[i].lineTo(-5, -10);
+    boids[i].lineTo(-5, -7);
     boids[i].endFill();
 
     boids[i].x = Math.random()*app.screen.width;

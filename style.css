@@ -1,6 +1,6 @@
 body{
-    font-family: "Open Sans", Helvetica, Arial, sans-serif;
-    background-color: #f0ffff;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
     border-style: solid;
     margin: 0px;
 }
@@ -16,6 +16,9 @@ a {
     justify-content: space-between;
     padding: 5rem 10%;
     letter-spacing: 0.1rem;
+}
+.active-nav {
+    box-shadow: 0 1px 0 black;
 }
 .nav-title {
     margin: auto 0px;
@@ -52,13 +55,12 @@ ul li {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 0 10%;
+    color: #222;
 }
 
 .title {
-    display: flex;
-    justify-content: center;
     letter-spacing: 0.2rem;
-    padding: 1rem 0px;
+    padding: 1rem 20%;
     text-align: center;
 }
 
@@ -84,5 +86,47 @@ footer{
     background-color: black;
     color: #f0ffff;
     text-align: center;
-    padding: 3px;
+    padding: 1rem;
+}
+
+/*CV page*/
+.description {
+    margin: auto 0;
+}
+
+.timeline li {
+    display: flex;
+    justify-content: right;
+    color: #222;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    font-weight: 400;
+}
+
+.timeline li h2 {
+    margin: 0;
+    text-align: right;
+    font-size: 1.2rem;
+}
+.timeline li p {
+    margin: 0;
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+.timeline li img {
+    width: 4rem;
+    margin: auto 0px;
+    padding-left: 1rem;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column a {
+    color: blue;
+    font-weight: 200;
 }
